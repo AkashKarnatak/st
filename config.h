@@ -10,7 +10,7 @@ static char *font = "Hack Nerd Font:pixelsize=15:antialias=true:autohint=true";
 static char *font2[] = {
 	 /* "Symbols Nerd Font:pixelsize=12:antialias=true:autohint=true", */ 
    /* "Roboto Mono for Powerline:pixelsize=12:antialias=true:autohint=true", */
-	 "Hack Nerd Font:pixelsize=15:antialias=true:autohint=true", 
+	 "JoyPixels:pixelsize=15:antialias=true:autohint=true", 
 };
 
 static int borderpx = 2;
