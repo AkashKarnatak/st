@@ -5,12 +5,17 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack Nerd Font:pixelsize=15:antialias=true:autohint=true";
+
+static char *font = "JetbrainsMono nerd font:pixelsize=15:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	 /* "Symbols Nerd Font:pixelsize=12:antialias=true:autohint=true", */ 
+	 /* "Symbols Nerd Font:pixelsize=12:antialias=true:autohint=true", */
    /* "Roboto Mono for Powerline:pixelsize=12:antialias=true:autohint=true", */
-	 "JoyPixels:pixelsize=15:antialias=true:autohint=true", 
+   "Font Awesome 5 Brands,Font Awesome 5 Brands Regular:pixelsize=15:antialias=true:autohint=true",
+   "Font Awesome 5 Free,Font Awesome 5 Free Solid:pixelsize=15:antialias=true:autohint=true",
+   "firacode nerd font:pixelsize=17:antialias=true:autohint=true",
+	 "JoyPixels:pixelsize=15:antialias=true:autohint=true",
+	 "Material Design Icons Desktop:size=15:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
@@ -102,39 +107,40 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  /* 8 normal colors */
-  "#181819", /* base00 */
-  "#fc5d7c", /* base08 */
-  "#9ed072", /* base0B */
-  "#e7c664", /* base0A */
-  "#76cce0", /* base0D */
-  "#b39df3", /* base0E */
-  "#f39660", /* base0C */
-  "#e2e2e3", /* base05 */
-  /* 8 bright colors */
-  "#181819", /* base00 */
-  "#fc5d7c", /* base08 */
-  "#9ed072", /* base0B */
-  "#e7c664", /* base0A */
-  "#76cce0", /* base0D */
-  "#b39df3", /* base0E */
-  "#f39660", /* base0C */
-  "#e2e2e3", /* base05 */
+    /* Text colors */
+	"#171b23",
+	"#be5046",
+	"#98c379",
+	"#d19a66",
+	"#61afef",
+	"#c678dd",
+	"#56b6c2",
+	"#828997",
+
+    /* Highlight colors */
+	"#5c6370",
+	"#e06c75",
+	"#98c379",
+	"#e5c07b",
+	"#61afef",
+	"#c678dd",
+	"#56b6c2",
+	"#abb2bf",
   [255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#b39df3", /* 256 -> cursor */
+	"#51afef", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#2c2e34", /* 258 -> bg */
-	"#e2e2e3", /* 259 -> fg */
+	"#282c34", /* 258 -> bg */
+	"#bbc2cf", /* 259 -> fg */
 };
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
+unsigned int defaultfg = 259;
 unsigned int defaultbg = 258;
-static unsigned int defaultcs = 13;
+static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 0;
 
 /*
